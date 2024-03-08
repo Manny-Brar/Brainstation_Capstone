@@ -1,7 +1,7 @@
 
 # Brainstation Capstone - Formula 1 Predictive Modeling
 
-![Formula 1 Predictive Modeling]()
+![Formula 1 Predictive Modeling](https://github.com/Manny-Brar/Brainstation_Capstone/blob/578a5104f1d958f25d2cb1f0a252ac0728296194/F1%20Predictive%20Analytics.png)
 
 ## Project Summary:
 This project aims to explore and develop predictive analytics models that utilizes historical race data, weather conditions, and car performance metrics to forecast race outcomes in Formula 1. 
