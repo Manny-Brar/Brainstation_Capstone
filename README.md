@@ -6,6 +6,12 @@
 ## Project Summary:
 This project aims to explore and develop predictive analytics models that utilizes historical race data, weather conditions, and car performance metrics to forecast race outcomes in Formula 1. 
 
+This project will utilize machine learning algorithms to make predictions on top 5 race placements and will explore an extensive dataset that includes lap times from past races and qualification lap results, tire usage, pit stop strategies, weather conditions, and additional pertinent variables from historical Formula 1 races. The predictive model developed from this analysis will undergo thorough training, testing, and validation phases using these datasets, to confirm its precision and dependability in predicting outcomes.
+
+![SWOT Analysis](https://github.com/Manny-Brar/Brainstation_Capstone/blob/b0dd0aa205abb4732840e4bcee3a96e67ac26cdf/F1%20Predictive%20Analytics%20(1).png)
+
+
+
 ## Data Sources:
 [Formula 1](https://www.formula1.com/en/results.html/2024/races.html) | 
 [Ergast API](https://ergast.com/mrd/) | 
@@ -69,3 +75,8 @@ Creating a list of URL's to scrape from formula1.com
         print('SUCCESS: ALL STATUS CODES=200')
         
     status_code()
+
+
+## ML Model Exploration
+
+![ML Model Exploration](https://github.com/Manny-Brar/Brainstation_Capstone/blob/8e38791c571d972fe2b3b4f94c01fcfa41ef860c/F1%20Predictive%20Analytics%20(2).png)
