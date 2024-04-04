@@ -18,7 +18,7 @@ This project will utilize machine learning algorithms to make predictions on AVG
 [FastAPI](https://theoehrly.github.io/Fast-F1-Pre-Release-Documentation/api.html#module-fastf1.api) | 
 
 
-## Data Dictionary(Updated:Mar 7, 2024)    
+## Data Dictionary(Updated:Apr 1, 2024)    
 
 GP Winners Dataframe:
 
@@ -31,6 +31,39 @@ GP Winners Dataframe:
 | Laps                    | Total Laps Completed | 
 | RaceTime_sec            | Total Race Duration in Seconds | 
 | AVG_Lap_Time_sec        | Average Lap Time For Winning Driver | 
+
+
+Quali Results Dataframe:
+
+| Column                  | Description |
+| :---                    | --- |
+| Race_Winner             | GP Winner |
+| Race_AVG_Lap_Time_sec   | GP Winners AVG Lap Time (Race) |
+| Time                    | Time of Event
+| Driver                  | Quali Driver |
+| DriverNumber            | Quali Driver # |
+| LapTime                 | Quali Lap Time |
+| LapNumber               | Quali Lap Number |
+| Stint                   | Quali Stint Number |
+| PitOutTime              | Pit Stop Exit Time |
+| PitInTime               | Pit Stop Entry Time |
+| Sector1Time             | Sector 1 Time for Lap |
+| Sector2Time             | Sector 2 Time for Lap |
+| Sector3Time             | Sector 3 Time for Lap |
+| SpeedI1                 | Speed Trap 1 (km/h) |
+| SpeedI2                 | Speed Trap 2 (km/h) |
+| IsPersonalBest          | Is Lap Personal Best? |
+| Compound                | Tyre Compound |
+| TyreLife                | Tyre Life in Laps Completed |
+| FreshTyre               | Is Tyre Fresh |
+| Team                    | Drivers Team |
+| TrackStatus             | Track Status |
+| Position                | Quali Position |
+| Deleted                 | Is Lap Deleted? |
+| Year                    | GP Year |
+| Grand Prix              | GP Location |
+| Event_id                | Event ID |
+
 
 
 ## Data Pipeline & Infrastructure
@@ -83,5 +116,44 @@ Creating a list of URL's to scrape from formula1.com
 
 
 ## ML Model Exploration
+
+      # Defining the model architecture
+      model = Sequential([
+          Dense(93, input_shape=(X_train_preprocessed.shape[1],), activation='relu'),
+          Dropout(0.25),
+          Dense(36, activation='relu'),
+          Dropout(0.25),
+          Dense(63, activation='relu'),
+          Dropout(0.25),
+          Dense(96, activation='relu'),
+          Dropout(0.25),
+          Dense(93, activation='relu'),
+          Dropout(0.25),
+          Dense(96, activation='relu'),
+          Dropout(0.25),
+
+          Dense(1, activation='linear')  # Change to linear activation for regression
+          #Dense(1, activation='softmax')
+          #Dense(1, activation="sigmoid")
+      ])
+
+      # Compiling the model
+      model.compile(optimizer='adam', loss='mean_squared_error', metrics=['mean_absolute_error'])
+      #model.compile(optimizer='adam', loss=keras.losses.BinaryCrossentropy(), metrics=[keras.metrics.BinaryAccuracy()])
+
+
+      # Model summary 
+      model.summary()
+
+
+      ########################
+
+      # Training the model
+      history = model.fit(X_train_preprocessed, y_train, epochs=300, batch_size=6, validation_split=0.2)
+
+      # Evaluating the model
+      loss, mae = model.evaluate(X_test_preprocessed, y_test)
+      print(f'Test loss: {loss:.4f}')
+      print(f'Test mean absolute error: {mae:.4f}')
 
 ![ML Model Exploration](https://github.com/Manny-Brar/Brainstation_Capstone/blob/a5ebdf5364a125699ed359491746b3d4646fd716/F1%20Predictive%20Analytics%20(2).jpg)
