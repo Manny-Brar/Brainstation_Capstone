@@ -65,6 +65,22 @@ Quali Results Dataframe:
 | Event_id                | Event ID |
 
 
+Weather Dataframe:
+
+| Column                  | Description |
+| :---                    | --- |
+| Time                    | Time of Weather Snapshot |
+| AirTemp                 | Air Temp |
+| Humidity                | Humidity |
+| Pressure                | Air Pressure |
+| Rainfall                | Rainfall on Track |
+| TrackTemp               | Track Level Temp |
+| WindDirection           | Wind Direction |
+| WindSpeed               | Wind Speed on Track |
+| Year                    | Year of GP |
+| Grand Prix              | Grand Prix Location |
+| Event_id                | Event ID |
+
 
 ## Data Pipeline & Infrastructure
 
