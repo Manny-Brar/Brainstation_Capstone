@@ -172,4 +172,7 @@ Creating a list of URL's to scrape from formula1.com
       print(f'Test loss: {loss:.4f}')
       print(f'Test mean absolute error: {mae:.4f}')
 
-![ML Model Exploration](https://github.com/Manny-Brar/Brainstation_Capstone/blob/a5ebdf5364a125699ed359491746b3d4646fd716/F1%20Predictive%20Analytics%20(2).jpg)
+
+![ML Model Exploration](https://github.com/Manny-Brar/Brainstation_Capstone/blob/d9f043402e7722362ca901d8f833e02c176a2609/F1%20Predictive%20Analytics%20(2).png)
+
+![Neural Network Result Dash](https://github.com/Manny-Brar/Brainstation_Capstone/blob/d9f043402e7722362ca901d8f833e02c176a2609/F1_-_Prediction_Dash.pdf)
