@@ -1,13 +1,15 @@
 
 # Brainstation Capstone - Formula 1 Predictive Modeling
 
-![Formula 1 Predictive Modeling](https://github.com/Manny-Brar/Brainstation_Capstone/blob/a5ebdf5364a125699ed359491746b3d4646fd716/F1%20Predictive%20Analytics.jpg)
+
 
 ## Project Summary:
 This project aims to explore and develop predictive analytics models that utilizes historical race data, weather conditions, and car performance metrics to forecast race outcomes in Formula 1. 
 
 This project will utilize machine learning algorithms to make predictions on AVG Race Lap Times and will explore an extensive dataset that includes lap times from past races and qualification lap results, tire usage, pit stop strategies, weather conditions, and additional pertinent variables from historical Formula 1 races. The predictive model developed from this analysis will undergo thorough training, testing, and validation phases using these datasets, to confirm its precision and dependability in predicting outcomes.
 
+
+![Formula 1 Predictive Modeling](https://github.com/Manny-Brar/Brainstation_Capstone/blob/a5ebdf5364a125699ed359491746b3d4646fd716/F1%20Predictive%20Analytics.jpg)
 ![SWOT Analysis](https://github.com/Manny-Brar/Brainstation_Capstone/blob/a5ebdf5364a125699ed359491746b3d4646fd716/F1%20Predictive%20Analytics%20(1).jpg)
 
 
