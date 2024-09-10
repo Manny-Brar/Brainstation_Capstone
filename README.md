@@ -175,4 +175,4 @@ Creating a list of URL's to scrape from formula1.com
 
 ![ML Model Exploration](https://github.com/Manny-Brar/Brainstation_Capstone/blob/d9f043402e7722362ca901d8f833e02c176a2609/F1%20Predictive%20Analytics%20(2).png)
 
-![Neural Network Result Dash](https://github.com/Manny-Brar/Brainstation_Capstone/blob/d9f043402e7722362ca901d8f833e02c176a2609/F1_-_Prediction_Dash.pdf)
+![Neural Network Result Dash]([https://github.com/Manny-Brar/Brainstation_Capstone/blob/d9f043402e7722362ca901d8f833e02c176a2609/F1_-_Prediction_Dash.pdf](https://github.com/Manny-Brar/F1_Winner_Prediction_NeuralNetwork/blob/0d1649cb02f8bce204be11fa83177d73bfcc044f/1.jpg))
